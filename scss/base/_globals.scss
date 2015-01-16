@@ -1,7 +1,10 @@
 //Base Style Modifications
 
 h5 { font-weight:bold; }
-p { font-size:.95em; }
+p { 
+  // font-size:1.15em;
+  line-height:2em;
+ }
 
 @media #{$large-up} {
   ol {display:inline-block;}
@@ -52,8 +55,20 @@ img {
   }
 }
 
-//Dropdown
+.dropcap {
+  float:left;
+  font-size:5em;
+  line-height:.5em;
+  margin-right:10px;
+  padding-top:.15em;
+}
 
+figcaption {
+  font-size:.75em;
+  font-style:italic;
+}
+
+.button.tiny { font-size:1em;}
 
 
 //Media Object pattern floats an image to one side and copy to another

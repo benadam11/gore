@@ -31,24 +31,26 @@
   .section-title { margin-bottom:.75em;}
 
   form {
-    padding:1em;
     text-align:center;
+    position:relative;
   }
 
   input {
     border:1px solid $gold;
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
-    font-size:1em;
-    padding:.5em;
+    font-size:.95em;
+    height:2.75em;
     margin-bottom:1em;
   }
 
   button.button {
     border-top-left-radius:0px;
     border-bottom-left-radius:0px;
-    margin-left:-10px;
-    top:-3px;
+    height:2.75em;
+    // position:absolute;
+    // right:0;
+    // top:0;
   }
 
 }

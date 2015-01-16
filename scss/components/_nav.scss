@@ -18,12 +18,14 @@
 .secondary-nav.active {
   @include transform(translateY(-50px)); 
   @include transition(transform .35s ease-in-out);
+
+  a.button{ top:-9px;} 
 }
 
 .secondary-nav { 
   padding-top:.65em;
 
-  a.button { top:-6px;} 
+  p { line-height:.95em; padding-top:.25em; }
 }
 
 .logo {

@@ -1,0 +1,17 @@
+.next-button-left,
+.next-button-right {
+  display:none;
+  position:absolute;
+  top:50%;
+  width:100px;
+  height:3em;
+  @include transform(translateY(-50%));
+}
+
+.next-button-left {
+  left:0;
+}
+
+.next-button-right {
+  right:0;
+}

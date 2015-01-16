@@ -14,7 +14,7 @@ $(window).scroll(function(){
     return false;
   }
 
-  $('.feature-description').css({
+  $('.feature-description, .article-hero .section-title').css({
     bottom: '-=' + scrollSpeed/4.5,
     opacity: '-=' + scrollSpeed/700
   }); 
