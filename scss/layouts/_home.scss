@@ -1,0 +1,142 @@
+//Hero Section
+
+.hero {
+  height:700px;
+  height:100vh;
+  background-size:cover;
+  background-position:50% 0%;
+  position:relative;
+  overflow:hidden;
+
+  h1 {
+    color:white;
+    max-width:60vw;
+    font-size:5vw;
+    font-family:serif;
+    line-height:1.25em;
+    margin-bottom:.25em;
+
+    a:hover{ color:white; }
+  }
+
+  .button {
+    border-color:white;
+    background:transparent;
+    color:white;
+
+    &:hover{
+      background:white;
+      color:$gold;
+    }
+  }
+}
+
+.feature-description {
+  position:absolute;
+  width:100%;
+  bottom:100px;
+  left:0;
+}
+
+.field-notes,
+.outbound-links { 
+  padding-top:5em;
+  padding-bottom:5em;
+}
+
+//Brand Activation Featurettes 
+
+.bav-image {
+  width:25%;
+  height:auto;
+  margin:0;
+  float:left;
+  position:relative;
+  @media #{$medium-only},#{$small-only} { width:50%; }
+
+  &:hover .overlay { 
+    opacity:1;
+    @include transition(opacity .25s ease-in-out);
+  }
+  
+  &:hover .description-inner { 
+    @include transform(translateY(-10px)); 
+    @include transition(transform .25s ease-in-out);
+  }
+
+  img {
+    width:100%;
+    height:100%;
+    display:block;
+    margin-bottom:0px;
+  }
+
+  .overlay {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    opacity:.6;
+    @include background-image(linear-gradient( rgba(0,0,0,0) 0, rgba(0,0,0,.8) 100%));
+    @include transition(opacity .25s ease-in-out);
+  }
+  
+}
+
+.bav-description {
+  border:2px solid rgba(255,255,255,.2);
+  position:absolute;
+  width:90%;
+  height:90%;
+  left:50%;
+  top:50%;
+  z-index:2;
+  @include transform(translateX(-50%) translateY(-50%));
+
+  .description-inner {
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    @include transition(all .25s ease-in-out);
+
+    @media #{$small-only} { left:10px; }
+  }
+
+  h4 {
+    color:white;
+    font-size:1.25em;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+
+  p {
+    color:white;
+    @media #{$small-only} { display:none; }
+  }
+}
+
+//Outbound Links Section
+
+.outbound-links article {
+  padding:1em;
+  margin-bottom:2em;
+  border:2px solid $gold;
+
+  .bd {
+    border-left:1px solid $gold;
+    padding-left:1em;
+
+    @media #{$small-only}{
+      border-left:0px;
+      border-top:1px solid $gold;
+      padding-top:1em;
+    }
+    
+  }
+
+  p { margin-bottom:.25em;}
+
+}
+
+.outbound-links article:first-child { margin-top:0px; }
+

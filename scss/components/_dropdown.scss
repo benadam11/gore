@@ -1,0 +1,35 @@
+.dropdown {
+  display:none;
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  bottom:0;
+  background:rba (0,0,0,.9);
+  background:white;
+  z-index:3;
+  overflow:scroll;
+  padding-top:6em;
+
+  .section-title { margin-bottom:1.5em; }
+}
+
+.dropdown body { overflow: hidden; }
+
+.table-of-contents { margin-bottom:1em; }
+
+.previous-issues {
+  li { 
+    border-top:1px solid $gold;
+    padding-top:1em;
+    padding-bottom:1em;
+
+    &:last-child {border-bottom:1px solid $gold;}
+
+    &:hover {
+      background:$gold;
+      
+      h3 {color:white;}
+    }
+  }
+}

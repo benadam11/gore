@@ -1,6 +1,10 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "gore_2016",
   "dependencies": {
     "foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "bourbon": "~4.1.1",
+    "waypoints": "~3.0.1"
   }
 }

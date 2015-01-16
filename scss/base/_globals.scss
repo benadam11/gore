@@ -1,0 +1,90 @@
+//Base Style Modifications
+
+h5 { font-weight:bold; }
+p { font-size:.95em; }
+
+@media #{$large-up} {
+  ol {display:inline-block;}
+  ol li {font-size:1.25em; padding-bottom:.25em; margin-left:.5em; text-align:left;}
+}
+
+img { 
+  display:block; 
+  margin-bottom:1em;
+}
+
+.button {
+  color:$gold;
+  background:white;
+  border:1px solid $gold;
+}
+
+.inner-container {
+  max-width:45em;
+  margin:0 auto;
+  padding:1em;
+}
+
+.section-title {
+  text-align:center;
+  margin-bottom:3em;
+
+  &:after {
+    content:'';
+    // position:absolute;
+    display:inline-block;
+    width:80px;
+    border-bottom:2px solid $gold;
+  }
+
+  h3 {
+    color:$gold;
+    font-weight:bold;
+    font-style:italic;
+    font-family:$font-family-serif;
+    margin-bottom:.05em;
+  }
+  
+  h5 {
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:.85em;
+  }
+}
+
+//Dropdown
+
+
+
+//Media Object pattern floats an image to one side and copy to another
+.media-object { margin:10px; }
+
+.media-object, .bd { 
+  // Clears all floats - its magic 
+  overflow:hidden; 
+  _overflow:visible; 
+  zoom:1; 
+}
+.media-object .img { 
+  float:left; 
+  margin-right: 1em; 
+
+  @media #{$small-only} { 
+    float:none;
+    display:block;
+  }
+}
+.media-object .imgExt {float:right; margin-left: 10px;}
+
+// Helpers
+.center { 
+  text-align:center; 
+  @media #{$small-only} { text-align:left; }
+}
+.uppercase { text-transform:uppercase; }
+.pad { padding: 0 1em; }
+.white { color:white; }
+.gold { color:$gold; }
+.serif { font-family:$font-family-serif; }
+.left { float:left; }
+// .right { float:right; }

@@ -1,0 +1,119 @@
+.main-header {
+  background-color:rgba(255,255,255,1);
+  position:fixed;
+  overflow:hidden;
+  width:100%;
+  height:4em;
+  z-index:10; //Ten is the top of the Z-index 
+  border-bottom:2px solid $gold;
+}
+
+.main-nav,
+.secondary-nav { 
+  padding-top:.75em; 
+  @include transition(transform .35s ease-in-out);
+}
+
+.main-nav.active,
+.secondary-nav.active {
+  @include transform(translateY(-50px)); 
+  @include transition(transform .35s ease-in-out);
+}
+
+.secondary-nav { 
+  padding-top:.65em;
+
+  a.button { top:-6px;} 
+}
+
+.logo {
+  float:left;
+  display:block;
+  background:url('background-images/logo-sprite.png');
+  background-position:0 95%;
+  width:100px;
+  text-indent:-9999px;
+  padding-top:.35em;
+}
+
+.footprint-logo {
+  float:left;
+  display:block;
+  background:url('background-images/footprint-logo.svg') no-repeat;
+  background-size:80%;
+  width:45px;
+  height:45px;
+  text-indent:-9999px;
+  position:relative;
+  top:-6px;
+  // padding-top:.35em;
+}
+
+.header-menu { float:right; }
+
+
+
+.navigation-toggle {
+  width: 25px;
+  height: 40px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  // margin-top:.85em;
+}
+
+.navigation-toggle-label {
+  // color: black;
+  display: inline-block;
+  position: absolute;
+  right: -20px;
+  bottom:8px;
+  width:200px;
+}
+
+.navigation-toggle-icon {
+  border-bottom: 2px solid $gold;
+  padding-top: 19px;
+  display: block;
+}
+
+.navigation-toggle-icon:before,
+.navigation-toggle-icon:after {
+  border-top: 2px solid $gold;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.navigation-toggle-icon:before { top: 10px; }
+.navigation-toggle-icon:after { bottom: 10px; }
+
+/*
+ * This is where all the animation happens
+ */
+.navigation-toggle-icon,
+.navigation-toggle-icon:before,
+.navigation-toggle-icon:after {
+  @include transition-property(transform, border-color);
+  @include transition-duration(0.1s);
+  // @include transition-timing-function(cubic-bezier(0.5, -0.5, 0.5, 1.5));
+  @include transition-timing-function(ease-in-out);
+}
+
+.navigation-toggle-icon { @include transition-delay(0.125s); }
+
+.navigation-toggle-icon:before,
+.navigation-toggle-icon:after {
+  @include transition-delay(0s);
+  @include transform-origin(center);
+}
+
+.navigation-target.clicked + .navigation-toggle {
+  .navigation-toggle-icon { @include transition-delay(0s); border-color: transparent;  }
+  .navigation-toggle-icon:before,
+  .navigation-toggle-icon:after { @include transition-delay(.125s); }
+  .navigation-toggle-icon:before { @include transform(translateY(9px) rotate(135deg)); }
+  .navigation-toggle-icon:after { @include transform(translateY(-9px) rotate(-135deg)); }
+}
