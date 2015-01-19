@@ -55,6 +55,38 @@ img {
   }
 }
 
+.subscribe-form {
+
+  form {
+    text-align:center;
+    position:relative;
+    min-height:3em;
+  }
+
+  input {
+    border:1px solid $gold;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    font-size:1em;
+    font-family:$font-family-serif;
+    width:100%;
+    padding-top:.625rem;
+    padding-bottom:.6875rem;
+    padding-left:1.25rem;
+    position:absolute;
+    left:0;
+  }
+
+  .button {
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    margin-bottom:0;
+    position:absolute;
+    right:0;
+  }
+  
+}
+
 .dropcap {
   float:left;
   font-size:5em;

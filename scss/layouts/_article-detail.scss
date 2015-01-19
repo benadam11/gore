@@ -11,12 +11,20 @@
     top:50%;
     left:50%;
     @include transform(translateX(-50%) translateY(-50%)); 
+
+    &:after {
+      border-color:white;
+    }
+
+    h3,h5 {color:white;}
   }
 }
 .article { 
+
   .inner-container { padding-top:0px; }
-  
+
   img {margin-bottom:.5em; } 
+  
 }
 
 .content {
@@ -30,5 +38,7 @@
     width:100%;
     height:auto;
   }
+
+  .callout{ .section-title {margin-bottom:1em; } }
 
 }

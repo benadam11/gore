@@ -1,0 +1,42 @@
+  .callout {
+    background-size:cover;
+    background-position: bottom center;
+    position:relative;
+    min-height:500px;
+    padding:2em;
+
+    @media #{$small-only},#{$medium-only} {min-height:350px;} 
+  }
+
+  .callout-card {
+    background:white;
+    border:2px solid $gold;
+    padding:2em;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:500px;
+    @include transform( translateX(-50%) translateY(-50%)); 
+    
+    @media #{$small-only},#{$medium-only} {width:300px;} 
+    
+    .callout-copy {
+      margin-bottom:1em;
+      font-size:.95em;
+      line-height: 1.75em;
+    }
+
+    .callout-image {
+      background-size:cover;
+      height:150px;
+      width:100%;
+    }
+
+    .section-title { margin-bottom:1.5em; }
+
+    .subscribe-form {
+      padding-left:2em;
+      padding-right:2em;
+    }
+  }
+

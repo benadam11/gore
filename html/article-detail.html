@@ -20,9 +20,9 @@
 
 <style>
   .article-hero {
-    background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%),url("images/article-image-mountain.jpg");
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%), url("images/article-image-mountain.jpg");
-    background-image: linear-gradient( rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%),url("images/article-image-mountain.jpg");
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%),url("images/article-feature");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%), url("images/article-feature.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%),url("images/article-feature.jpg");
   }
 </style>
   
@@ -55,9 +55,15 @@
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
   </div>
 
-  <div class="inner-container article">
-    <img src="images/climbers.jpg" alt="">
-    <figcaption>Boots with gore-text soles did me right</figcaption>
+  <div class="row article">
+    <div class="medium-6 columns">
+      <img src="images/climbers.jpg" alt="">
+      <figcaption>Boots with gore-text soles did me right</figcaption>
+    </div>
+    <div class="medium-6 columns">
+      <img src="images/article-image-sign.jpg" alt="">
+      <figcaption>Boots with gore-text soles did me right</figcaption>
+    </div>
   </div>
 
   <div class="inner-container">
@@ -67,12 +73,7 @@
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
   </div>
 
-  <div class="row article">
-    <img src="images/article-image-boots.jpg" alt="">
-    <div class="inner-container">
-      <figcaption>Boots with gore-text soles did me right</figcaption>
-    </div>
-  </div>
+ @@include('gear-guide-callout.html')
 
   <div class="inner-container bd">
     <p>Donec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>

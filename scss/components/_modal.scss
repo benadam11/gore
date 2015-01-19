@@ -30,28 +30,7 @@
 
   .section-title { margin-bottom:.75em;}
 
-  form {
-    text-align:center;
-    position:relative;
-  }
-
-  input {
-    border:1px solid $gold;
-    border-top-left-radius:3px;
-    border-bottom-left-radius:3px;
-    font-size:.95em;
-    height:2.75em;
-    margin-bottom:1em;
-  }
-
-  button.button {
-    border-top-left-radius:0px;
-    border-bottom-left-radius:0px;
-    height:2.75em;
-    // position:absolute;
-    // right:0;
-    // top:0;
-  }
+  
 
 }
 
@@ -70,6 +49,8 @@
     height:auto;
   }
 }
+
+
 
 .content-side { padding:2em; }
 

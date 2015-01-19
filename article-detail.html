@@ -79,11 +79,13 @@
       <p>Sed sed purus ac mi semper ornare ut ut ligula. Donec vehicula tellus et pretium egestas. Integer vestibulum ultrices nibh, eget ullamcorper nibh. Sed sed purus ac mi semper ornare ut ut ligula. Donec vehicula tellus et pretium egestas. Integer vestibulum ultrices nibh, eget ullamcorper nibh.</p> 
 
       <p>Sed sed purus ac mi semper ornare ut ut ligula. Donec vehicula tellus et pretium egestas. Integer vestibulum ultrices nibh, eget ullamcorper nibh. Sed sed purus ac mi semper ornare ut ut ligula. Donec vehicula tellus et pretium egestas. Integer vestibulum ultrices nibh, eget ullamcorper nibh.</p>
-
-      <form action="">
-        <input type="email">
-        <button class="button tiny radius">Subscribe Me</button>
-      </form>
+      
+      <div class="subscribe-form">
+        <form action="">
+          <input type="email">
+          <button class="button tiny radius">Subscribe Me</button>
+        </form>
+      </div>
 
     </div>
     <a href="" class="close-button">&#10006;</a>
@@ -94,9 +96,9 @@
 
 <style>
   .article-hero {
-    background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%),url("images/article-image-mountain.jpg");
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%), url("images/article-image-mountain.jpg");
-    background-image: linear-gradient( rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%),url("images/article-image-mountain.jpg");
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%),url("images/article-feature");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%), url("images/article-feature.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .4) 100%),url("images/article-feature.jpg");
   }
 </style>
   
@@ -129,9 +131,15 @@
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
   </div>
 
-  <div class="inner-container article">
-    <img src="images/climbers.jpg" alt="">
-    <figcaption>Boots with gore-text soles did me right</figcaption>
+  <div class="row article">
+    <div class="medium-6 columns">
+      <img src="images/climbers.jpg" alt="">
+      <figcaption>Boots with gore-text soles did me right</figcaption>
+    </div>
+    <div class="medium-6 columns">
+      <img src="images/article-image-sign.jpg" alt="">
+      <figcaption>Boots with gore-text soles did me right</figcaption>
+    </div>
   </div>
 
   <div class="inner-container">
@@ -141,12 +149,30 @@
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
   </div>
 
-  <div class="row article">
-    <img src="images/article-image-boots.jpg" alt="">
-    <div class="inner-container">
-      <figcaption>Boots with gore-text soles did me right</figcaption>
+ <style>
+  .callout {
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),url("images/article-image-mountain.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%), url("images/article-image-mountain.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),url("images/article-image-mountain.jpg");
+  }
+
+  .callout-image {
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),url("images/article-image-mountain.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%), url("images/article-image-mountain.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),url("images/article-image-mountain.jpg");
+  }
+</style>
+
+<section class="callout">
+  <div class="callout-card center">
+    <div class="section-title">
+      <h5>Gear Guide</h5>
+      <h3 class="serif">Gear Recommendations</h3>
     </div>
+    <p class="callout-copy">See our gear recommendations for climbing Mt. Kilamanjaro.</p>
+    <a href="#" class="button radius tiny">Find the Gear</a>
   </div>
+</section>
 
   <div class="inner-container bd">
     <p>Donec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
