@@ -1,28 +1,11 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gore Content Hub</title>
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <link rel="stylesheet" href="css/app.css" />
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
-  <!-- Font Awesome -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  
-</head>
-<body>
-  <!-- Content Goes Here -->
-
 @@include('header.html')
 @@include('modal.html')
 <!-- Styles Inlined For Future CMS Integration -->
 <style>
   .hero {
-    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),url("images/article-image-mountain.jpg");
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%), url("images/article-image-mountain.jpg");
-    background-image: linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),url("images/article-image-mountain.jpg");
+    background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.1) 100%),url("images/kilimanjaro.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.1) 100%), url("images/kilimanjaro.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.1) 100%),url("images/kilimanjaro.jpg");
   }
 </style>
 
@@ -30,7 +13,7 @@
   <div class="feature-description pad">
     <div class="row">
       <h4 class="white">Cover Story By: <a href="#" class="white">Liz Rodgers</a></h4>
-      <h1><a href="article-detail.html" class="white">Summeting Mt. Kilimanjaro Against All Odds</a></h1>
+      <h1><a href="article-detail.html" class="white">Summiting Mt. Kilimanjaro Against All Odds</a></h1>
       <a href="article-detail.html" class="button radius">Read Article</a>
     </div>
   </div>
@@ -72,7 +55,7 @@
       <img src="./images/rafting.jpg">
       <a class="bav-description">
         <div class="description-inner">
-          <h4>Remember The Moment</h4>
+          <h5>Remember The Moment</h5>
           <p>Sub-headline Would Go here</p>
         </div>
       </a>
@@ -81,9 +64,9 @@
 
     <div class="bav-image">
       <img src="./images/gearGuide.jpg">
-      <a class="bav-description">
+      <a href="gear-guide.html" class="bav-description">
         <div class="description-inner">
-          <h4>Gear Guide</h4>
+          <h5>Gear Guide</h5>
           <p>Sub-headline Would Go here</p>
         </div>
       </a>
@@ -94,7 +77,7 @@
       <img src="./images/history.jpg">
       <a href="#" class="bav-description">
         <div class="description-inner">
-          <h4>The Lab</h4>
+          <h5>The Lab</h5>
           <p>Sub-headline Would Go here</p>
         </div>
       </a>
@@ -105,7 +88,7 @@
       <img src="./images/whatever-the-weather.jpg">
       <a class="bav-description">
         <div class="description-inner">
-          <h4>Whatever The Weather</h4>
+          <h5>Whatever The Weather</h5>
           <p>Sub-headline Would Go here</p>
         </div>
       </a>
@@ -161,14 +144,5 @@
 
 
 @@include('subscribe-callout.html')
-
     
 @@include('footer.html')
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-  <script src="bower_components/foundation/js/foundation.min.js"></script>
-  <script src="js/app.js"></script>
-
-</body>
-</html>

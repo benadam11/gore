@@ -1,0 +1,29 @@
+.gear-floater {
+  float:left;
+  border:2px solid $gold;
+  background:$ghost;
+  width:300px;
+  height:auto;
+  margin-right:2em;
+  margin-left:-150px;
+  padding:1em;
+
+   @media #{$small-only} {
+    float:none; 
+    width:100%;
+    margin-bottom:2em;
+  }
+
+  img {
+    height:150px;
+  }
+
+  p{
+    font-size:.95em;
+    line-height:1.75em;
+    margin-bottom:.75em;
+  }
+  .button{
+    margin-bottom:0;
+  }
+}

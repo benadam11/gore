@@ -16,6 +16,17 @@ img {
   margin-bottom:1em;
 }
 
+blockquote {
+  float:left;
+  margin-right:10px;
+  margin-left:-150px;
+  width:400px;
+  height:auto;
+  font-size:2em;
+  font-weight:bold;
+  font-style:italic;
+}
+
 .button {
   color:$gold;
   background:white;
@@ -57,6 +68,8 @@ img {
 
 .subscribe-form {
 
+
+
   form {
     text-align:center;
     position:relative;
@@ -84,7 +97,19 @@ img {
     position:absolute;
     right:0;
   }
-  
+
+  @media #{$small-only} { 
+
+    input,
+    .button {
+      position:relative;
+      margin-bottom:.5em;
+      padding-left:1em;
+      padding-right:1em;
+    }
+    
+  }
+
 }
 
 .dropcap {
@@ -134,4 +159,15 @@ figcaption {
 .gold { color:$gold; }
 .serif { font-family:$font-family-serif; }
 .left { float:left; }
+.tablet-up { 
+  @media #{$small-only} {
+    display:none;
+  }
+}
+.mobile-only { 
+  display:none;
+  @media #{$small-only} {
+    display:block;
+  }
+}
 // .right { float:right; }

@@ -35,7 +35,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task ('html', function(){
-  return gulp.src(['html/index.html','html/article-detail.html'])
+  return gulp.src(['html/index.html','html/article-detail.html','html/gear-guide.html'])
          .pipe(fileInclude({
           prefix: '@@',
           basepath: '@file'
