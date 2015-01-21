@@ -1,8 +1,13 @@
 //Base Style Modifications
 
-h5 { font-weight:bold; }
+h5 { 
+  font-size:.85em;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
 p { 
-  // font-size:1.15em;
+  font-size:.95em;
   line-height:2em;
  }
 
@@ -25,6 +30,7 @@ blockquote {
   font-size:2em;
   font-weight:bold;
   font-style:italic;
+  @media #{$small-only} { margin-left:0px; font-size:1.5em; width:100%;}
 }
 
 .button {
@@ -67,8 +73,6 @@ blockquote {
 }
 
 .subscribe-form {
-
-
 
   form {
     text-align:center;
@@ -146,28 +150,29 @@ figcaption {
     display:block;
   }
 }
-.media-object .imgExt {float:right; margin-left: 10px;}
+.media-object .imgExt { float:right; margin-left: 10px; }
 
 // Helpers
 .center { 
   text-align:center; 
   @media #{$small-only} { text-align:left; }
 }
+
+.right { @media #{$small-only} { float:none; } }
+.left { float:left; }
 .uppercase { text-transform:uppercase; }
 .pad { padding: 0 1em; }
 .white { color:white; }
 .gold { color:$gold; }
 .serif { font-family:$font-family-serif; }
 .left { float:left; }
-.tablet-up { 
-  @media #{$small-only} {
-    display:none;
-  }
-}
+.tablet-up, #tablet-up { @media #{$small-only} { display:none; } }
 .mobile-only { 
   display:none;
-  @media #{$small-only} {
-    display:block;
-  }
+  @media #{$small-only} { display:block; }
 }
-// .right { float:right; }
+
+
+//Delete these styles 
+
+.sample-text { padding-top:.15em; font-size:1.25em; font-style:italic; font-weight:bold; font-family:$font-family-sans-serif; text-transform:uppercase; }

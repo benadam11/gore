@@ -4,14 +4,16 @@
   background:$ghost;
   width:300px;
   height:auto;
+  margin-top:.5em;
   margin-right:2em;
-  margin-left:-150px;
+  margin-left:-10em;
   padding:1em;
 
    @media #{$small-only} {
     float:none; 
     width:100%;
     margin-bottom:2em;
+    margin-left:0px;
   }
 
   img {

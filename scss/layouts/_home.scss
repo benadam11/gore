@@ -7,17 +7,32 @@
   background-position:bottom;
   position:relative;
   overflow:hidden;
+  @media #{$small-only} { height: 500px;}
+
+}
+
+.feature-description {
+  position:absolute;
+  width:100%;
+  bottom:50px;
+  left:0;
 
   h1 {
     color:white;
-    max-width:60vw;
+    max-width:15em;
+    font-size:4.5em;
     font-size:5vw;
     font-family:serif;
     line-height:1.25em;
     margin-bottom:.25em;
 
+    @media #{$small-only} { font-size: 2.75em;}
+    @media #{$medium-only} { font-size: 3.75em;}
+
     a:hover{ color:white; }
   }
+
+  p {color: white; max-width:70em;}
 
   .button {
     border-color:white;
@@ -31,15 +46,7 @@
   }
 }
 
-.feature-description {
-  position:absolute;
-  width:100%;
-  bottom:50px;
-  left:0;
-}
-
-.field-notes,
-.outbound-links { 
+.field-notes { 
   padding-top:3em;
   padding-bottom:3em;
 }
@@ -85,18 +92,16 @@
 
 .bav-description {
   border:2px solid rgba(255,255,255,.2);
-  position:absolute;
   width:90%;
   height:90%;
-  left:50%;
-  top:50%;
   z-index:2;
-  @include transform(translateX(-50%) translateY(-50%));
+  @include center-element;
 
   .description-inner {
     position:absolute;
     bottom:20px;
     left:20px;
+    padding:10px;
     @include transition(all .25s ease-in-out);
 
     @media #{$small-only} { left:10px; }
@@ -104,32 +109,42 @@
 
   h5 {
     color:white;
-    font-size:.85em;
-    font-weight:bold;
-    text-transform:uppercase;
+    
   }
 
   p {
     color:white;
-    font-size:1.15em;
+    font-size:.85em;
     @media #{$small-only} { display:none; }
   }
 }
 
 //Outbound Links Section
 
-.outbound-links article {
-  padding:1em;
-  margin-bottom:2em;
-  border:2px solid $gold;
+.outbound-links { 
+  padding-top:3em;
+  border-top:3px solid $gold;
+  border-bottom:3px solid $gold;
+}
+
+.outbound-links .media-object {
+  display:block;
+  margin:0;
+
+  .link { display:block; color:#222; border-top:2px solid $gold;}
+  .link.first { background:rgba(203, 203, 203, .2);}
+  .link.first:hover { background:rgba(203, 203, 203, .3);}
+  .link.second { background:rgba(203, 203, 203, .4);}
+  .link.second:hover { background:rgba(203, 203, 203, .5);}
+  .link.third { background:rgba(203, 203, 203, .6);}
+  .link.third:hover { background:rgba(203, 203, 203, .7);}
+  .link.fourth { background:rgba(203, 203, 203, .8);}
+  .link.fourth:hover { background:rgba(203, 203, 203, .9);}
 
   .bd {
-    border-left:1px solid $gold;
-    padding-left:1em;
 
     @media #{$small-only}{
       border-left:0px;
-      border-top:1px solid $gold;
       padding-top:1em;
     }
     
@@ -139,5 +154,4 @@
 
 }
 
-.outbound-links article:first-child { margin-top:0px; }
 

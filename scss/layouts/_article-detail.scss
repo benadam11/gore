@@ -6,6 +6,8 @@
   overflow:hidden;
   margin-bottom:4em;
 
+  @media #{$small-only} { height:550px;}
+
   .section-title {
     position:absolute;
     top:50%;

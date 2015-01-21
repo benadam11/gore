@@ -1,0 +1,19 @@
+@mixin center-element {
+  position:absolute;
+  left:50%;
+  top:50%;
+  @include transform(translateX(-50%) translateY(-50%));
+}
+
+@mixin center-elementX {
+  position:absolute;
+  left:50%;
+  @include transform(translateX(-50%));
+}
+
+@mixin center-elementY {
+  position:absolute;
+  top:50%;
+  @include transform(translateY(-50%));
+}
+

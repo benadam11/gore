@@ -13,24 +13,18 @@
 .modal {
   background:white;
   border:3px solid $gold;
-  position:absolute;
   min-width:55em;
   height:auto;
-  top:50%;
-  left:50%;
-
-  @include transform(translateX(-50%) translateY(-50%)); 
+  @include center-element;
 
   @media #{$small-only},#{$medium-only} { 
-    min-width:18em;
+    min-width:298px;
     top:2em;
     overflow:scoll;
     @include transform(translateX(-50%)); 
   }
 
   .section-title { margin-bottom:.75em;}
-
-  
 
 }
 
@@ -49,8 +43,6 @@
     height:auto;
   }
 }
-
-
 
 .content-side { padding:2em; }
 
