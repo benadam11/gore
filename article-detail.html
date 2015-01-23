@@ -27,7 +27,7 @@
   <nav class="row secondary-nav pad bd">
     <a href="/" class="footprint-logo">Logo</a>
     <p class="left" id="tablet-up">Issue 1: Transformation</p>
-    <a href="#" id="js-modal-trigger" class="button radius right tiny">About This Issue</a>
+    <a href="#" id="js-modal-trigger" class="button right tiny">About This Issue</a>
   </nav>
   
 </header>
@@ -84,8 +84,9 @@
       
       <div class="subscribe-form">
         <form action="">
-          <input type="email">
-          <button class="button tiny radius">Subscribe Me</button>
+          <label for="email-input" class="input-label">Enter Your Email Address</label>
+          <input type="email" name="email-input" class="email-input">
+          <button class="button tiny">Subscribe Me</button>
         </form>
       </div>
 
@@ -105,14 +106,18 @@
 </style>
   
 <section class="article-hero">
-  <div class="section-title">
-    <h5>Climbing Mt Kilimanjaro</h5>
-    <h3>Issue 1: Transformation</h3>
+  <div class="feature-description pad">
+    <div class="inner-container">
+      <h1><a href="article-detail.html" class="white">From Kilimanjaro to Aconcagua</a></h1>
+      <h5 class="white">Born without limbs, Maynard is proof that nothing is beyond reach. </h5>
+      <span class="meta white">By Liz Rodgers</span>
+    </div>
   </div>
 </section>
 
 <section class="content">
   <div class="inner-container">
+    <h2>It all began last summer</h2>
     <p>Gonec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
 
     <div class="gear-floater">
@@ -125,6 +130,7 @@
     <p>Donec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. 
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
 
+
     <p>Donec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. 
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
   </div>
@@ -136,7 +142,9 @@
 
   <div class="inner-container">
     <p>Onec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
-
+    
+    <h2>Climbing "The Beast"</h2>
+    
     <p>Donec eleifend ultrices dui, et commodo metus dictum sed. Maecenas facilisis augue varius porta luctus. In hac habitasse platea dictumst. 
     Nulla fermentum risus et dui dignissim, sed blandit nibh malesuada. Suspendisse leo sem, pulvinar non nibh nec, blandit tempus leo. Ut euismod purus eget aliquam sodales. Aliquam nec ultrices purus. Nam at commodo nisl, vel viverra elit. Nam velit dolor, accumsan eget sollicitudin sed, cursus sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante neque, viverra vel purus non, mattis dignissim dui.</p>
   </div>
@@ -180,20 +188,17 @@
     
 <footer class="site-footer">
   <div class="row pad">
-    <ul class="inline-list small-12 medium-8 columns">
-      <li><a href="">Privacy</a></li>
-      <li class="gold" id="tablet-up">|</li>
-      <li><a href="">Terms of Use</a></li>
-      <li class="gold" id="tablet-up">|</li>
-      <li class="gold">Social</li>
-      <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+    <ul class="inline-list small-12 columns">
+      <li><a href="" class="white"><span>&copy;</span>Copyright 2014 W. L. Gore & Associates | </a></li>
+      <li><a href="">Privacy | </a></li>
+      <li><a href="">Terms of Use | </a></li>
+      <li>Social</li>
+      <!-- <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
       <li><a href=""><i class="fa fa-instagram"></i></a></li>
-      <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter-square"></i></a></li> -->
       <!-- <li><a href="">|</a></li> -->
     </ul>
-    <div class=" small-12 medium-4 columns">
-      <a class=""> Copyright&copy; 2014 W. L. Gore & Associates </a>
-    </div>
+    <a href="" class="footer-logo"><img src="images/gore-logo.svg" alt=""></a>
   </div>
 </footer>
 

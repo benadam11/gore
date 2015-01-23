@@ -1,11 +1,19 @@
 .site-footer { 
-  border-top:2px solid $gold; 
-  padding-top:1em;
-  padding-bottom:.25em;
+  background: $jet; 
+  color:white;
+  padding-top:3em;
+  padding-bottom:3em;
+  
+  .row { position:relative; }
 
-  @media #{$small-only} {
-    li { float:none; margin-bottom:.5em;}
-    a { font-size:.75em; }
+  .footer-logo {
+    height:150px;
+    width:150px;
+    position:absolute;
+    right:0;
+    top:-123px;
   }
 
+  li { color:white; font-size:.85em; font-style:italic; margin-left:.5em;}
+  a { color:white; }
 }

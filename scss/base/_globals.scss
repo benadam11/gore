@@ -61,21 +61,8 @@ input {
   ::-moz-placeholder,         
   :-ms-input-placeholder {color:$ghost;}
 
-// .button { @include button-mixin($jet,white); }
-// .button-light { @include button-mixin (white, $jet);}
-.button.tiny { font-size:1em;}
-.button.form-submit { 
-  border:0;
-  padding:0; 
-  @include transition(all .35s ease-in-out);
 
-  &:hover { 
-    background:transparent; 
-    color:$jet; 
-    @include transform(translateX(5px)); 
-    @include transition(all .35s ease-in-out);
-  }
-}
+.button.tiny { font-size:1em;}
 
 .dropcap {
   float:left;
@@ -89,7 +76,6 @@ figcaption {
   font-size:.75em;
   font-style:italic;
 }
-
 
 
 //Media Object pattern floats an image to one side and copy to another
