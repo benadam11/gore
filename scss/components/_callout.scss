@@ -31,9 +31,56 @@
 
     .section-title { margin-bottom:1.5em; }
 
-    .subscribe-form {
-      padding-left:2em;
-      padding-right:2em;
-    }
   }
 
+  .subscribe-form { 
+    position:relative;
+
+    h2 { margin-bottom:.5em; }
+    
+    label {
+
+      display:inline-block;
+      font-family:$font-family-sans-serif;
+      margin-bottom:.5em;
+      text-transform:uppercase;
+      font-weight:bold;
+      font-size:.85em;
+      opacity:.3;
+      padding-left:1em;
+      z-index:-1;
+
+      @include transform(translateY(42px)); 
+      @include transition(all .35s ease-in-out);
+    }
+
+    label.active {
+      color:$jet;
+
+      opacity:1;
+      @include transform(translateY(0px)); 
+      @include transition(all .35s ease-in-out);
+    }
+
+    input {
+      background:transparent;
+      border: 1px solid $gold;
+      border-radius:4px;
+      font-size:1em;
+      padding-top:1em;
+      padding-left:1em;
+      padding-bottom:1em;
+      width:100%;
+    }
+
+    .button {
+      position:absolute;
+      // border-right:0px;
+      height:3.25em;
+      right:0;
+      bottom:-20px;
+    }
+
+  }
+
+  

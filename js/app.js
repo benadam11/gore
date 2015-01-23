@@ -58,6 +58,19 @@ $('.navigation-toggle').on('click',function() {
    $('.modal-bg').fadeOut();
  });
 
+ /*
+ * Float Label
+ */
+
+ $('#email-input').on('focus', function(){
+    $('#input-label').addClass('active');
+ });
+
+ $('#email-input').on('blur', function(){
+    var formVal = $(this).val();
+    if (formVal !== ''){ return false }
+    $('#input-label').removeClass('active');
+ });
 
 function resetParralax (){
   var lastScrollTop = 0;
@@ -111,7 +124,3 @@ function navSwitch() {
     isActive = false;
   }
 }
-
-
-  
-

@@ -1,43 +1,23 @@
 //Base Style Modifications
 
-h5 { 
-  font-size:.85em;
-  font-weight:bold;
-  text-transform:uppercase;
-}
-
-p { 
-  font-size:.95em;
-  line-height:2em;
- }
-
-@media #{$large-up} {
-  ol {display:inline-block;}
-  ol li {font-size:1.25em; padding-bottom:.25em; margin-left:.5em; text-align:left;}
-}
 
 img { 
   display:block; 
   margin-bottom:1em;
+  width:100%;
+  height:auto;
 }
 
-blockquote {
-  float:left;
-  margin-right:10px;
-  margin-left:-150px;
-  width:400px;
-  height:auto;
-  font-size:2em;
-  font-weight:bold;
-  font-style:italic;
-  @media #{$small-only} { margin-left:0px; font-size:1.5em; width:100%;}
-}
+
 
 .button {
   color:$gold;
   background:white;
   border:1px solid $gold;
 }
+
+.button.tiny { font-size:1em;}
+
 
 .inner-container {
   max-width:45em;
@@ -72,48 +52,29 @@ blockquote {
   }
 }
 
-.subscribe-form {
+input {
+  &:focus { outline: none; }
+}
 
-  form {
-    text-align:center;
-    position:relative;
-    min-height:3em;
+::-webkit-input-placeholder,
+  :-moz-placeholder,          
+  ::-moz-placeholder,         
+  :-ms-input-placeholder {color:$ghost;}
+
+// .button { @include button-mixin($jet,white); }
+// .button-light { @include button-mixin (white, $jet);}
+.button.tiny { font-size:1em;}
+.button.form-submit { 
+  border:0;
+  padding:0; 
+  @include transition(all .35s ease-in-out);
+
+  &:hover { 
+    background:transparent; 
+    color:$jet; 
+    @include transform(translateX(5px)); 
+    @include transition(all .35s ease-in-out);
   }
-
-  input {
-    border:1px solid $gold;
-    border-top-left-radius:3px;
-    border-bottom-left-radius:3px;
-    font-size:1em;
-    font-family:$font-family-serif;
-    width:100%;
-    padding-top:.625rem;
-    padding-bottom:.6875rem;
-    padding-left:1.25rem;
-    position:absolute;
-    left:0;
-  }
-
-  .button {
-    border-top-left-radius:0px;
-    border-bottom-left-radius:0px;
-    margin-bottom:0;
-    position:absolute;
-    right:0;
-  }
-
-  @media #{$small-only} { 
-
-    input,
-    .button {
-      position:relative;
-      margin-bottom:.5em;
-      padding-left:1em;
-      padding-right:1em;
-    }
-    
-  }
-
 }
 
 .dropcap {
@@ -129,7 +90,6 @@ figcaption {
   font-style:italic;
 }
 
-.button.tiny { font-size:1em;}
 
 
 //Media Object pattern floats an image to one side and copy to another
@@ -146,13 +106,13 @@ figcaption {
   margin-right: 1em; 
 
   @media #{$small-only} { 
-    float:none;
-    display:block;
+    margin-right:.25em;
   }
 }
 .media-object .imgExt { float:right; margin-left: 10px; }
 
 // Helpers
+
 .center { 
   text-align:center; 
   @media #{$small-only} { text-align:left; }
@@ -171,8 +131,3 @@ figcaption {
   display:none;
   @media #{$small-only} { display:block; }
 }
-
-
-//Delete these styles 
-
-.sample-text { padding-top:.15em; font-size:1.25em; font-style:italic; font-weight:bold; font-family:$font-family-sans-serif; text-transform:uppercase; }

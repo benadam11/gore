@@ -18,13 +18,7 @@
   left:0;
 
   h1 {
-    color:white;
-    max-width:15em;
-    font-size:4.5em;
-    font-size:5vw;
-    font-family:serif;
-    line-height:1.25em;
-    margin-bottom:.25em;
+    max-width:10em;
 
     @media #{$small-only} { font-size: 2.75em;}
     @media #{$medium-only} { font-size: 3.75em;}
@@ -49,6 +43,14 @@
 .field-notes { 
   padding-top:3em;
   padding-bottom:3em;
+}
+
+.secondary-article {
+  border-bottom:1px solid $silver;
+  padding-bottom:2em;
+  margin-bottom:3em;
+
+  &:last-child { border-bottom:0px; margin-bottom:0;}
 }
 
 //Brand Activation Featurettes 
@@ -119,39 +121,33 @@
   }
 }
 
+
 //Outbound Links Section
+.outbound-links { padding-top:4em; }
 
-.outbound-links { 
-  padding-top:3em;
-  border-top:3px solid $gold;
-  border-bottom:3px solid $gold;
-}
+.outbound-links article {
+  padding-bottom:2em;
+  margin-bottom:2em;
+  border-bottom:1px solid $silver;
+  vertical-align:top;
 
-.outbound-links .media-object {
-  display:block;
-  margin:0;
+  &:last-child { border-bottom:0px; }
 
-  .link { display:block; color:#222; border-top:2px solid $gold;}
-  .link.first { background:rgba(203, 203, 203, .2);}
-  .link.first:hover { background:rgba(203, 203, 203, .3);}
-  .link.second { background:rgba(203, 203, 203, .4);}
-  .link.second:hover { background:rgba(203, 203, 203, .5);}
-  .link.third { background:rgba(203, 203, 203, .6);}
-  .link.third:hover { background:rgba(203, 203, 203, .7);}
-  .link.fourth { background:rgba(203, 203, 203, .8);}
-  .link.fourth:hover { background:rgba(203, 203, 203, .9);}
+  .bd { padding-left:1em; }
 
-  .bd {
-
-    @media #{$small-only}{
-      border-left:0px;
-      padding-top:1em;
-    }
-    
+  img {
+    position:relative;
+    top:10px;
+    height:40px;
+    width:40px;
+    border:1px solid $gold;
+    padding:5px;
   }
 
   p { margin-bottom:.25em;}
 
 }
+
+.outbound-links article:first-child { margin-top:0px; }
 
 
