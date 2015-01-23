@@ -41,13 +41,14 @@
     label {
 
       display:inline-block;
-      font-family:$font-family-sans-serif;
+      font-family:$font-family-serif;
       margin-bottom:.5em;
-      text-transform:uppercase;
+      // text-transform:uppercase;
       font-weight:bold;
-      font-size:.85em;
+      font-size:.75em;
       opacity:.3;
       padding-left:1em;
+      padding-right:1em;
       z-index:-1;
 
       @include transform(translateY(42px)); 
@@ -55,10 +56,10 @@
     }
 
     label.active {
-      color:$jet;
-
+      color:$gold;
       opacity:1;
-      @include transform(translateY(0px)); 
+      background:white;
+      @include transform(translateY(15px) scale(.8)); 
       @include transition(all .35s ease-in-out);
     }
 
