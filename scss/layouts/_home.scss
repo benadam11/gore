@@ -51,6 +51,12 @@
   margin-bottom:3em;
 
   &:last-child { border-bottom:0px; margin-bottom:0;}
+
+  a {
+    color:$jet;
+
+    &:hover p {opacity:.8;}
+  }
 }
 
 //Brand Activation Featurettes 
@@ -69,7 +75,7 @@
   }
   
   &:hover .description-inner { 
-    @include transform(translateY(-10px)); 
+    @include transform(translateY(-20%)); 
     @include transition(transform .25s ease-in-out);
   }
 
@@ -101,8 +107,8 @@
 
   .description-inner {
     position:absolute;
-    bottom:20px;
-    left:20px;
+    bottom:-10px;
+    left:10px;
     padding:10px;
     @include transition(all .25s ease-in-out);
 
@@ -116,7 +122,8 @@
 
   p {
     color:white;
-    font-size:.85em;
+    font-size:.75em;
+    font-style:italic;
     @media #{$small-only} { display:none; }
   }
 }
@@ -128,7 +135,7 @@
 .outbound-links article {
   padding-bottom:2em;
   margin-bottom:2em;
-  border-bottom:1px solid $gainsboro;
+  border-bottom:1px solid $gold;
   vertical-align:top;
 
   &:last-child { border-bottom:0px; }

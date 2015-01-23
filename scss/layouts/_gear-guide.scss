@@ -8,6 +8,13 @@
 .guide-details {
   margin-bottom:4em;
 
+  h1 {
+    max-width:10em;
+
+    @media #{$small-only} { font-size: 2.75em;}
+    @media #{$medium-only} { font-size: 3.75em;}
+  }
+
   p {
     font-size:.95em;
     line-height:1.75em;
