@@ -4,17 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gore Content Hub</title>
+
   <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- Styles -->
   <link rel="stylesheet" href="css/app.css" />
+  <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 </head>
 <body>
 <!-- Start Here -->
 <header class="main-header">
   <!-- Primary Nav -->
   <nav class="row main-nav pad">
-    <!-- <a href="/" class="logo">Logo</a>  -->  <a href="http://ids001.tklapp.com/gore_2016/" class="left sample-text">Weather Permitted</a>
+    <!-- <a href="/" class="logo">Logo</a>  -->  <a href="/" class="left sample-text" id="firstStop">Weather Permitted</a>
     <div class="header-menu">
       <a id="navigation-target" class="navigation-target"></a>
       <span class="navigation-toggle">
@@ -25,7 +28,7 @@
   </nav>
   <!-- Secondary Nav -->
   <nav class="row secondary-nav pad bd">
-    <a href="http://ids001.tklapp.com/gore_2016/" class="footprint-logo">Logo</a>
+    <a href="/" class="footprint-logo">Logo</a>
     <p class="left" id="tablet-up">Issue 1: Transformation</p>
     <a href="#" id="js-modal-trigger" class="button right tiny">About This Issue</a>
   </nav>
@@ -108,47 +111,15 @@
 </style>
 
 <section class="hero">
-  <div class="feature-description pad">
+  <div class="feature-description pad" >
     <div class="row">
       <h5 class="white">Featured Article </h5>
-      <h1><a href="article-detail.html" class="white">From Kilimanjaro to Aconcagua</a></h1>
+      <h1 id="numero1"><a href="article-detail.html" class="white">From Kilimanjaro to Aconcagua</a></h1>
       <span class="meta white">Kyle Maynard Defies <br> the Odds </span>
       <a href="article-detail.html" class="button">Read Article</a>
     </div>
   </div>
 </section>
-
-
-
-<!-- <section class="field-notes">
-  <div class="row">
-    <div class="section-title pad">
-      <h5>Field Notes</h5>
-      <h3 class="serif">Stories From Abroad</h3>
-    </div>
-    <div class="medium-6 large-4 columns">
-      <img src="./images/first-mile.jpg">
-      <h3>The First Mile</h3>
-      <h5>Everyday Enthusiasts</h5>
-      <p>One triathloner in a family is unique. An entire family of triathloners is downright rare. What started with Brian Hoffmaster was adopted by Jill Hoffmaster and trickled all the way to their 10-year-old daughter, Ella. See how the Hoffmasters push each other to go further each and every day.</p>
-      <a href="" class="button radius">Read Article</a>
-    </div>
-     <div class="medium-6 large-4 columns">
-       <img src="./images/fishing-adventure.jpg">
-       <h3>Alaskan Adventure: </h3>
-       <h5>Exploring the History of Camp Michaux</h5>
-       <p>What may seem like an oft-overlooked, interesting pit stop off of the Appalachian Trail carries hundreds of years of history and lore. From its farming roots to its secret past as a WWII prisoner of war camp, this veiled gem is well worth the stop.</p>
-      <a href="" class="button radius">Read Article</a>
-     </div>
-     <div class="medium-6 large-4 columns left">
-       <img src="./images/path2.jpg">
-       <h3>A Secret Path:</h3>
-       <h5>Camp Michaux</h5>
-       <p>What may seem like an oft-overlooked, interesting pit stop off of the Appalachian Trail carries hundreds of years of history and lore. From its farming roots to its secret past as a WWII prisoner of war camp, this veiled gem is well worth the stop. </p>
-       <a href="" class="button radius">Read Article</a>
-     </div>
-  </div>
-</section> -->
 
 
 <section class="field-notes">
@@ -162,7 +133,7 @@
     <div class="large-6 columns">
       <a href=""><img src="./images/first-mile.jpg"></a>
     </div>
-    <article class="large-6 columns"> 
+    <article class="large-6 columns"  id="numero2"> 
       <a href="">
         <h2>Everyday Enthusiasts</h2>
         <h5>The Family That Triathlons Together…</h5>
@@ -204,8 +175,8 @@
 
 
 <section class="bav-list">
-  <div class="section-title pad">
-    <h5>Featurettes</h5>
+  <div class="section-title pad" >
+    <h5 >Featurettes</h5>
     <h3 class="serif">From Behind The Scenes</h3>
   </div>
   <div class="bd"> 
@@ -220,7 +191,7 @@
       <div class="overlay"></div>
     </div> 
 
-    <div class="bav-image">
+    <div class="bav-image" id="numero3">
       <img src="./images/history.jpg">
       <a  class="bav-description">
         <div class="description-inner">
@@ -260,15 +231,15 @@
 
   
   <div class="row">
-    <div class="section-title">
-      <h5>Editor's Picks</h5>
+    <div class="section-title" >
+      <h5 >Editor's Picks</h5>
       <h3>More Stories From Our Friends</h3>
     </div>
   </div>
 
   <div class="inner-container">
     <article class="media-object">
-      <span class="img"><img src="./images/backpack.svg" alt=""></span>
+      <span class="img" id="numero4"><img src="./images/backpack.svg" alt=""></span>
       <div class="bd">
         <h2>From Patagonia: The Cleanest Line</h2>
         <p>It’s not uncommon to hold onto adventure gear for years — even decades. When products are built for the long haul, they carry with them stories of miles traveled, rain showers endured and journeys yet to come. </p>
@@ -316,7 +287,7 @@
 </style>
 
 <section class="callout">
-  <div class="callout-card">
+  <div class="callout-card" id="numero5">
     <div class="section-title">
       <h5>Get Weather Permitted's</h5>
       <h3 class="serif">Exclusive Content <br> Delivered To Your Inbox</h3>
@@ -348,10 +319,40 @@
   </div>
 </footer>
 
+<!-- At the bottom of your page but inside of the body tag -->
+<ol class="joyride-list" id="joyRideTipContent" data-joyride >
+  <li data-id="firstStop" data-text="Next" data-options="prev_button: false; modal:true">
+    <h3>Welcome to a quick tour of Weather Permitted</h3>
+    <p>Weather Permitted is an online Magazine that highlights the incredible achievements of ordinary people.</p>
+  </li>
+  <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-options="tip_location: right; prev_button: false">
+    <h4>Featured Article</h4>
+    <p>An in-depth exploration that peels back the layers on the interesting, passionate and inspiring people who have committed their lives to chasing their escape. </p>
+  </li>
+  <li data-id="numero2" data-button="Next"  data-options="tip_location:right; prev_button: false">
+    <h4>Adventure Articles</h4>
+    <p>The best adventures are the ones that happen far off the beaten path. We’ll profile the best places to disconnect and tune in to the wild</p>
+  </li>
+  <li data-id="numero3" data-button="Next"  data-options="tip_location:top; prev_button: false">
+    <h4>Featurettes</h4>
+    <p>Love nerding out over gear? Take a behind the scenes look at the the science behind the gear, and see what the pros are using.</p>
+  </li>
+  <li data-id="numero4" data-button="Next"  data-options="tip_location:top; prev_button: false">
+    <h4>Stop #4</h4>
+    <p>Each month, we identify and share 3-4 partner articles (adding our unique perspective) that align with the theme of each issue.</p>
+  </li>
+  <li data-id="numero5" data-button="Ok Got It"  data-options="tip_location:right; prev_button: false; post_expose_callback:pageTop()">
+    <h4>Love What You See?</h4>
+    <p>We send out a weekly email with news, links, deals, and other amazing content.</p>
+  </li>
+  
+</ol>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
   <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+  <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
   <script src="js/app.js"></script>
 
 </body>

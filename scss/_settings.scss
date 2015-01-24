@@ -70,9 +70,9 @@
 // $base-line-height: 150%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
-// $include-html-classes: true;
-// $include-print-styles: true;
-// $include-html-global-classes: $include-html-classes;
+$include-html-classes: true;
+$include-print-styles: true;
+$include-html-global-classes: $include-html-classes;
 
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -93,28 +93,28 @@
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+   $font-weight-normal: normal !default;
+   $font-weight-bold: bold !default;
 
    $white       : #FFFFFF;
    $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
+   $snow        : #F9F9F9;
+   $vapor       : #F6F6F6;
+   $white-smoke : #F5F5F5;
    $silver      : #EFEFEF;
    $smoke       : #EEEEEE;
    $gainsboro   : #DDDDDD;
-// $iron        : #bbb38c;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
+   $iron        : #bbb38c;
+   $base        : #AAAAAA;
+   $aluminum    : #999999;
+   $jumbo       : #888888;
+   $monsoon     : #777777;
+   $steel       : #666666;
+   $charcoal    : #555555;
+   $tuatara     : #444444;
    $oil         : #7d7d7d;
    $jet         : #222;
-// $black       : #000000;
+   $black       : #000000;
 
 // Additional Colors
 
@@ -728,36 +728,36 @@
 // 14. Joyride
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-joyride-classes: $include-html-classes;
+$include-html-joyride-classes: $include-html-classes;
 
 // Controlling default Joyride styles
-// $joyride-tip-bg: $oil;
-// $joyride-tip-default-width: 300px;
-// $joyride-tip-padding: rem-calc(18 20 24);
-// $joyride-tip-border: solid 1px $charcoal;
-// $joyride-tip-radius: 4px;
-// $joyride-tip-position-offset: 22px;
+$joyride-tip-bg: $oil;
+$joyride-tip-default-width: 300px;
+$joyride-tip-padding: rem-calc(18 20 24);
+$joyride-tip-border: solid 1px $charcoal;
+$joyride-tip-radius: 4px;
+$joyride-tip-position-offset: 22px;
 
 // Here, we're setting the tip font styles
-// $joyride-tip-font-color: $white;
-// $joyride-tip-font-size: rem-calc(14);
-// $joyride-tip-header-weight: $font-weight-bold;
+$joyride-tip-font-color: $white;
+$joyride-tip-font-size: rem-calc(14);
+$joyride-tip-header-weight: $font-weight-bold;
 
 // This changes the nub size
-// $joyride-tip-nub-size: 10px;
+$joyride-tip-nub-size: 10px;
 
 // This adjusts the styles for the timer when its enabled
-// $joyride-tip-timer-width: 50px;
-// $joyride-tip-timer-height: 3px;
-// $joyride-tip-timer-color: $steel;
+$joyride-tip-timer-width: 50px;
+$joyride-tip-timer-height: 3px;
+$joyride-tip-timer-color: $steel;
 
 // This changes up the styles for the close button
-// $joyride-tip-close-color: $monsoon;
-// $joyride-tip-close-size: 24px;
-// $joyride-tip-close-weight: $font-weight-normal;
+$joyride-tip-close-color: $monsoon;
+$joyride-tip-close-size: 24px;
+$joyride-tip-close-weight: $font-weight-normal;
 
 // When Joyride is filling the screen, we use this style for the bg
-// $joyride-screenfill: rgba(0,0,0,0.5);
+$joyride-screenfill: rgba(0,0,0,0.5);
 
 // 15. Keystrokes
 // - - - - - - - - - - - - - - - - - - - - - - - - -

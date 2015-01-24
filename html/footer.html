@@ -14,10 +14,40 @@
   </div>
 </footer>
 
+<!-- At the bottom of your page but inside of the body tag -->
+<ol class="joyride-list" id="joyRideTipContent" data-joyride >
+  <li data-id="firstStop" data-text="Next" data-options="prev_button: false; modal:true">
+    <h3>Welcome to a quick tour of Weather Permitted</h3>
+    <p>Weather Permitted is an online Magazine that highlights the incredible achievements of ordinary people.</p>
+  </li>
+  <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-options="tip_location: right; prev_button: false">
+    <h4>Featured Article</h4>
+    <p>An in-depth exploration that peels back the layers on the interesting, passionate and inspiring people who have committed their lives to chasing their escape. </p>
+  </li>
+  <li data-id="numero2" data-button="Next"  data-options="tip_location:right; prev_button: false">
+    <h4>Adventure Articles</h4>
+    <p>The best adventures are the ones that happen far off the beaten path. We’ll profile the best places to disconnect and tune in to the wild</p>
+  </li>
+  <li data-id="numero3" data-button="Next"  data-options="tip_location:top; prev_button: false">
+    <h4>Featurettes</h4>
+    <p>Love nerding out over gear? Take a behind the scenes look at the the science behind the gear, and see what the pros are using.</p>
+  </li>
+  <li data-id="numero4" data-button="Next"  data-options="tip_location:top; prev_button: false">
+    <h4>Stop #4</h4>
+    <p>Each month, we identify and share 3-4 partner articles (adding our unique perspective) that align with the theme of each issue.</p>
+  </li>
+  <li data-id="numero5" data-button="Ok Got It"  data-options="tip_location:right; prev_button: false; post_expose_callback:pageTop()">
+    <h4>Love What You See?</h4>
+    <p>We send out a weekly email with news, links, deals, and other amazing content.</p>
+  </li>
+  
+</ol>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
   <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+  <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
   <script src="js/app.js"></script>
 
 </body>

@@ -1,15 +1,31 @@
 /*
-* Call Foundation
-*/ 
-
-$(document).foundation();
-
-/*
 * Global Variables
 */ 
 
 var isActive = false;
 var lastScrollTop = $(window).scrollTop();
+
+/*
+* Check For Tutorial Cookie, then call Foundation
+*/ 
+
+$(document).ready(function() {
+  if ($.cookie('gore_tutorial') == null) {
+
+    $.cookie('gore_tutorial', 'yes', { expires: 360 });
+
+    $(document).foundation('joyride', 'start', {
+
+      post_ride_callback: function(){
+
+        $("html, body").animate({ scrollTop: 0 }, 'slow');
+
+      }
+
+    });
+  }
+  else { $(document).foundation(); }
+});
 
 /*
 * Make sure paralax is reset
@@ -21,7 +37,10 @@ if (lastScrollTop > 0) { resetParralax(); }
 * Trigger Paralax On Scroll
 */ 
 
-$(window).scroll(bannerParralax); 
+$(window).scroll( function(){
+  checkForMobile();
+  bannerParralax();
+}); 
 
  /*
  * Navigation Dropdown Interaction 
@@ -97,7 +116,7 @@ function bannerParralax(){
 
   navSwitch();
 
-  checkForMobile();
+
 
   $('.feature-description').css({
     bottom: '-=' + scrollSpeed/4.5,
@@ -108,7 +127,8 @@ function bannerParralax(){
 }
 
 
-function checkForMobile() {
+function checkForMobile(message) {
+  console.log(message)
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     return false;
   }
