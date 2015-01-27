@@ -9,19 +9,6 @@ var lastScrollTop = $(window).scrollTop();
 * Check For Tutorial Cookie, then call Foundation
 */ 
 
-// $('.tour-start').click(function(){
-//   $('.about-modal-bg').fadeOut();
-//   $(document).foundation('joyride', 'start', {
-//     modal: true,
-//     post_ride_callback: function(){ 
-//       $("html, body").animate({ scrollTop: 0 }, 'slow'); 
-//       $.cookie('issue_modal', 'yes', { expires: 30 });
-//       // $('.modal-bg').fadeIn();
-//     }
-//   });
-// });
-
-
 $(document).ready(function() {
   if ($.cookie('gore_tutorial') == null) {
     $.cookie('gore_tutorial', 'yes', { expires: 360 });
@@ -62,7 +49,7 @@ if (lastScrollTop > 0) { resetParralax(); }
 
 $(window).scroll( function(){
   navSwitch();
-  
+
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     return false;
   }
