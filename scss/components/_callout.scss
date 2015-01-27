@@ -49,7 +49,7 @@
       font-weight:bold;
       font-size:.75em;
       opacity:.3;
-      padding-left:1em;
+      padding-left:1.5em;
       padding-right:1em;
       z-index:-1;
       position:relative;
@@ -62,12 +62,16 @@
       color:$gold;
       opacity:1;
       background:white;
-      @include transform(translateY(15px) scale(.8)); 
+      @include transform(translateY(16px) scale(.8)); 
       @include transition(all .35s ease-in-out);
       z-index:1;
     }
 
     input {
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+
       background:transparent;
       border: 1px solid $gold;
       font-size:1em;

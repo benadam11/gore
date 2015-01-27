@@ -69,14 +69,17 @@ h5.quote {
 
 blockquote {
   float:left;
-  margin-right:10px;
-  margin-left:-150px;
-  width:400px;
-  height:auto;
   font-size:2em;
   font-weight:bold;
   font-style:italic;
-  @media #{$small-only} { margin-left:0px; font-size:1.5em; width:100%;}
+  margin-right:10px;
+  margin-left:-150px;
+  margin-top:0;
+  margin-bottom:0;
+  width:400px;
+  height:auto;
+  
+  @media #{$small-only},#{$medium-only} { margin-left:0px; margin-bottom:1em; font-size:1.5em; width:100%;}
 }
 
 

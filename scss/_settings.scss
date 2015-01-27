@@ -731,15 +731,15 @@ $include-html-global-classes: $include-html-classes;
 $include-html-joyride-classes: $include-html-classes;
 
 // Controlling default Joyride styles
-$joyride-tip-bg: $oil;
-$joyride-tip-default-width: 300px;
+$joyride-tip-bg: $ghost;
+$joyride-tip-default-width: 400px;
 $joyride-tip-padding: rem-calc(18 20 24);
-$joyride-tip-border: solid 1px $charcoal;
+$joyride-tip-border: solid 2px $gold;
 $joyride-tip-radius: 4px;
 $joyride-tip-position-offset: 22px;
 
 // Here, we're setting the tip font styles
-$joyride-tip-font-color: $white;
+$joyride-tip-font-color: $jet;
 $joyride-tip-font-size: rem-calc(14);
 $joyride-tip-header-weight: $font-weight-bold;
 
@@ -757,7 +757,7 @@ $joyride-tip-close-size: 24px;
 $joyride-tip-close-weight: $font-weight-normal;
 
 // When Joyride is filling the screen, we use this style for the bg
-$joyride-screenfill: rgba(0,0,0,0.5);
+$joyride-screenfill: rgba(0,0,0,.5);
 
 // 15. Keystrokes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
