@@ -4,7 +4,7 @@
   "devDependencies": {
     "bourbon": "0.0.2",
     "browser-sync": "^1.9.0",
-    "gulp": "^3.8.10",
+    "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.0.0",
     "gulp-file-include": "^0.7.1",
     "gulp-include": "^1.1.0",
@@ -14,5 +14,8 @@
     "gulp-uglify": "^1.0.2",
     "node-bourbon": "^1.2.3",
     "node-sass": "~1.2.3"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11"
   }
 }
